@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/_10sdp"
+        android:id="@+id/llMainLayoutPrice"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:gravity="center"
+            android:buttonTint="@color/colorPrimaryDark"
+            android:id="@+id/cbCheckBoxProduct"
+            android:padding="@dimen/_5sdp"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/text_12"
+            android:text="@string/price_coloum"
+            android:id="@+id/tvProductPrice"
+            android:textColor="@color/colorBlack" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:digits="1234567890"
+            style="@style/text_14"
+            android:layout_height="wrap_content"
+            android:maxLength="5"
+            android:id="@+id/etPriceProduct"
+            android:minWidth="@dimen/_50sdp"
+            android:inputType="number"
+            tools:ignore="Autofill,LabelFor" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/text_12"
+            android:textColor="@color/color_ABABAB"
+            android:text="(1Kg)"
+            android:id="@+id/tvProductUnit" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="end"
+            android:gravity="center|end"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/llPriceLayout"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/text_14"
+                    android:text="@string/qty"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:textColor="@color/color_072745"
+                    android:id="@+id/tvProductQty" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:digits="1234567890"
+                    style="@style/text_14"
+                    android:layout_height="wrap_content"
+                    android:maxLength="5"
+                    android:id="@+id/etQtyProduct"
+                    android:minWidth="@dimen/_50sdp"
+                    android:inputType="number"
+                    tools:ignore="Autofill,LabelFor" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/text_14"
+                android:layout_gravity="end"
+                android:gravity="center|end"
+                android:layout_centerInParent="true"
+                android:layout_alignParentEnd="true"
+                android:text="@string/already_added"
+                android:textColor="@color/color_F44336"
+                android:id="@+id/tvAlreadyAdded" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_52sdp"
+        android:id="@+id/viewViewLayoutDisable"
+        android:background="@color/color_transparent_white" />
+
+</RelativeLayout>

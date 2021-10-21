@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:layout_marginStart="@dimen/_30sdp"
+        app:cardCornerRadius="@dimen/_5sdp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_margin="@dimen/_5sdp"
+            android:paddingStart="@dimen/_45sdp"
+            android:paddingEnd="@dimen/_5sdp"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/text_12"
+                android:textColor="@color/colorPrimary"
+                android:id="@+id/tvProductTitle" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/text_10"
+                android:text="@string/product_list"
+                android:lines="2"
+                android:ellipsize="end"
+                android:id="@+id/tvProductDescription" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/text_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:text="@string/qty"
+                    android:textColor="@color/color_ABABAB" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/text_12"
+                    android:textColor="@color/colorPrimary"
+                    android:minWidth="@dimen/_50sdp"
+                    android:inputType="number"
+                    android:digits="1234567890"
+                    android:maxLength="5"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:id="@+id/tvProductQty"
+                    tools:ignore="Autofill,LabelFor" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/text_12"
+                    android:text="@string/price"
+                    android:textColor="@color/color_ABABAB"
+                    android:ellipsize="end" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_height="wrap_content"
+                    style="@style/text_12"
+                    android:minWidth="@dimen/_50sdp"
+                    android:inputType="number"
+                    android:digits="1234567890"
+                    android:maxLength="5"
+                    android:id="@+id/tvProductPrice"
+                    android:textColor="@color/colorPrimary"
+                    tools:ignore="Autofill,LabelFor" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/text_10"
+                    android:text="@string/splash_bg"
+                    android:textColor="@color/color_ABABAB"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:id="@+id/tvProductUnit" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/change_order"
+                android:layout_gravity="end"
+                style="@style/text_14"
+                android:id="@+id/tvChangeOrderList"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textColor="@color/colorWhite"
+                android:paddingStart="@dimen/_10sdp"
+                android:paddingEnd="@dimen/_10sdp"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:background="@drawable/bg_button_orange" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        app:cardCornerRadius="@dimen/_5sdp"
+        android:layout_margin="@dimen/_10sdp"
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_60sdp"
+                android:src="@drawable/cake"
+                android:scaleType="centerCrop"
+                android:background="@color/color_F3F4F6"
+                android:id="@+id/ivProductImage"
+                android:contentDescription="@string/pendingimagebg" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

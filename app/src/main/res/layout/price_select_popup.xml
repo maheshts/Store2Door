@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="@dimen/_5sdp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10sdp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/text_14"
+            android:text="@string/product_list"
+            android:textColor="@color/colorPrimary"
+            android:layout_gravity="center"
+            android:id="@+id/tvProductTitle" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:id="@+id/rvPriceList"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_button"
+            android:padding="@dimen/_10sdp"
+            android:textColor="@color/colorWhite"
+            style="@style/text_16"
+            android:id="@+id/btDoneButton"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:text="@string/done" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

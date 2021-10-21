@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/_5sdp"
+    android:layout_marginStart="@dimen/_10sdp"
+    android:layout_marginEnd="@dimen/_10sdp"
+    android:layout_marginTop="@dimen/_5sdp"
+    android:layout_marginBottom="@dimen/_5sdp"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:padding="@dimen/_10sdp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/text_16"
+                    android:text="@string/price"
+                    android:textColor="@color/color_072745" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/text_16"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:text="@string/colon"
+                    android:textColor="@color/color_072745" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:digits="1234567890"
+                    style="@style/text_16"
+                    tools:ignore="Autofill,LabelFor"
+                    android:minWidth="@dimen/_50sdp"
+                    android:inputType="number"
+                    android:id="@+id/etProductPrice"
+                    android:textColor="@color/colorPrimary" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/text_16"
+                    android:textColor="@color/color_ABABAB"
+                    android:text="(1Kg)"
+                    android:id="@+id/tvProductUnit" />
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/text_16"
+                    android:text="@string/qty_without"
+                    android:textColor="@color/color_072745" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/text_16"
+                    android:text="@string/colon"
+                    android:textColor="@color/color_072745" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:digits="1234567890"
+                    android:layout_height="wrap_content"
+                    android:maxLength="5"
+                    style="@style/text_16"
+                    android:id="@+id/etQtyProduct"
+                    android:minWidth="@dimen/_50sdp"
+                    android:inputType="number"
+                    tools:ignore="Autofill,LabelFor" />
+
+            </TableRow>
+        </TableLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                style="@style/text_14"
+                android:id="@+id/tvUpdateImport"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:src="@drawable/ic_edit"
+                android:padding="@dimen/_10sdp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:padding="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:src="@drawable/ic_delete"
+                android:id="@+id/tvDeleteImport" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

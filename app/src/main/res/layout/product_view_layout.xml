@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:id="@+id/llTopLayoutProduct"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/llMainLayoutProduct"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <CheckBox
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:gravity="center"
+            android:buttonTint="@color/colorPrimaryDark"
+            android:id="@+id/cbCheckBoxProduct"
+            android:padding="@dimen/_5sdp"
+            android:layout_gravity="center" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            app:cardCornerRadius="@dimen/_5sdp"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp"
+                    android:src="@drawable/cake"
+                    android:scaleType="centerCrop"
+                    android:background="@color/color_F3F4F6"
+                    android:id="@+id/ivProductImage"
+                    android:contentDescription="@string/pendingimagebg" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:padding="@dimen/_5sdp"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhite">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/text_12"
+                        android:text="@string/product_list"
+                        android:textColor="@color/colorPrimary"
+                        android:id="@+id/tvProductTitle" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/text_10"
+                        android:text="@string/product_list"
+                        android:lines="2"
+                        android:ellipsize="end"
+                        android:id="@+id/tvProductDescription" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/text_14"
+                        android:layout_gravity="end"
+                        android:gravity="center|end"
+                        android:text="@string/already_added"
+                        android:textColor="@color/color_F44336"
+                        android:id="@+id/tvAlreadyAdded" />
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="@dimen/_5sdp"-->
+<!--                        android:layout_gravity="center"-->
+<!--                        android:gravity="center"-->
+<!--                        android:visibility="gone"-->
+<!--                        android:orientation="horizontal">-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            style="@style/text_12"-->
+<!--                            android:text="@string/price_coloum"-->
+<!--                            android:id="@+id/tvProductPrice"-->
+<!--                            android:textColor="@color/colorBlack" />-->
+<!--                        <EditText-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:digits="1234567890"-->
+<!--                            style="@style/text_14"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:maxLength="5"-->
+<!--                            android:id="@+id/etPriceProduct"-->
+<!--                            android:minWidth="@dimen/_50sdp"-->
+<!--                            android:inputType="number"-->
+<!--                            tools:ignore="Autofill,LabelFor" />-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            style="@style/text_12"-->
+<!--                            android:textColor="@color/color_ABABAB"-->
+<!--                            android:text="(1Kg)"-->
+<!--                            android:id="@+id/tvProductUnit" />-->
+
+<!--                        <RelativeLayout-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:layout_gravity="end"-->
+<!--                            android:gravity="center|end"-->
+<!--                            android:layout_height="wrap_content">-->
+
+<!--                            <LinearLayout-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_alignParentEnd="true"-->
+<!--                                android:id="@+id/llPriceLayout"-->
+<!--                                android:orientation="horizontal">-->
+
+
+<!--                                <TextView-->
+<!--                                    android:layout_width="wrap_content"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    style="@style/text_14"-->
+<!--                                    android:text="@string/qty"-->
+<!--                                    android:paddingLeft="@dimen/_5sdp"-->
+<!--                                    android:paddingRight="@dimen/_5sdp"-->
+<!--                                    android:textColor="@color/color_072745"-->
+<!--                                    android:id="@+id/tvProductQty" />-->
+
+<!--                                <EditText-->
+<!--                                    android:layout_width="wrap_content"-->
+<!--                                    android:digits="1234567890"-->
+<!--                                    style="@style/text_14"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:maxLength="5"-->
+<!--                                    android:id="@+id/etQtyProduct"-->
+<!--                                    android:minWidth="@dimen/_50sdp"-->
+<!--                                    android:inputType="number"-->
+<!--                                    tools:ignore="Autofill,LabelFor" />-->
+<!--                            </LinearLayout>-->
+
+<!--                            <TextView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                style="@style/text_14"-->
+<!--                                android:layout_gravity="end"-->
+<!--                                android:gravity="center|end"-->
+<!--                                android:layout_centerInParent="true"-->
+<!--                                android:layout_alignParentEnd="true"-->
+<!--                                android:text="@string/already_added"-->
+<!--                                android:textColor="@color/color_F44336"-->
+<!--                                android:id="@+id/tvAlreadyAdded" />-->
+
+<!--                        </RelativeLayout>-->
+
+
+<!--                    </LinearLayout>-->
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_87sdp"
+        android:id="@+id/viewViewLayoutDisable"
+        android:background="@color/color_transparent_white" />
+
+</RelativeLayout>

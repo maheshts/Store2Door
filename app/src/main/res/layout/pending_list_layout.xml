@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:id="@+id/cvMainLayout"
+    app:cardCornerRadius="@dimen/_5sdp"
+    android:layout_marginStart="@dimen/_10sdp"
+    android:layout_marginEnd="@dimen/_10sdp"
+    android:layout_marginTop="@dimen/_5sdp"
+    android:layout_marginBottom="@dimen/_5sdp"
+    android:layout_height="wrap_content"
+    card_view:cardUseCompatPadding="true"
+    card_view:elevation="@dimen/_10sdp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/_5sdp"
+        android:padding="@dimen/_10sdp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/text_16"
+            android:textColor="@color/color_072745"
+            android:id="@+id/tvProductTitle" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/text_14"
+                android:text="@string/total_order_qty"
+                android:textColor="@color/color_ABABAB"
+                android:ellipsize="end" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/text_14"
+                android:textColor="@color/colorPrimary"
+                android:ellipsize="end"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:id="@+id/tvProductDescription" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/text_14"
+                android:text="@string/total_amount"
+                android:textColor="@color/color_ABABAB"
+                android:ellipsize="end" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_height="wrap_content"
+                style="@style/text_14"
+                android:id="@+id/tvProductPrice"
+                android:textColor="@color/colorPrimary" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/order_status_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="8dip"
+            android:layout_gravity="end"
+            android:visibility="gone"
+            android:background="@drawable/round_corner_8_red"
+            android:textColor="@color/colorWhite"
+            style="@style/text_12" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
